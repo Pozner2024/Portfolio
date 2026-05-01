@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
         margin: 0;
       }
       nav {
-        background: #333;
+        background: #4a4870;
         color: #fff;
         padding: 10px;
         text-align: center;
@@ -68,18 +68,30 @@
         margin-top: 10px;
         color: #7774a7;
         text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          color 0.2s ease;
+      }
+      .project p > a:first-of-type:not(:only-of-type) {
+        margin-right: 10px;
+      }
+      .project a + a {
+        margin-left: 10px;
       }
       .project a:hover,
       .contact a:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         text-decoration: underline;
       }
       .contact a {
         color: #7774a7;
         text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          color 0.2s ease;
       }
       footer {
-        background: #333;
+        background: #4a4870;
         color: #fff;
         text-align: center;
         padding: 10px 0;
@@ -121,11 +133,12 @@
             "
           />
           <p>
-            I am currently working as a teacher of mathematics and information
-            technology at a college. In early 2024, I began studying frontend
-            development and plan to grow in this direction by learning React. My
-            experience includes technologies such as HTML, CSS, JavaScript, and
-            Firebase.
+            I work as a teacher of mathematics and information technology at a
+            college. I started learning frontend development in 2024 and have
+            been steadily growing as a developer ever since, moving from static
+            pages to full-stack applications. My current stack includes HTML,
+            CSS/SCSS, JavaScript, Vue.js, Node.js, PostgreSQL and I keep
+            building new projects to deepen my skills.
           </p>
         </div>
       </section>
@@ -138,15 +151,19 @@
           <div class="project">
             <h3>Victory's 80th Anniversary</h3>
             <p>
-              This is my first project, and I am still working on its content.
-              The project is designed as an educational resource for teachers
-              and college students on the topic of World War II. It also serves
-              as a kind of portfolio for a history teacher.
+              This is my veryfirst project. The project is designed as an
+              educational resource for teachers and college students on the
+              topic of World War II. It also serves as a kind of portfolio for a
+              history teacher.
             </p>
             <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript</p>
             <p>
               <a href="https://great-victory.netlify.app/" target="_blank"
                 >View project on Netlify</a
+              >
+              ·
+              <a href="https://github.com/Pozner2024/Victory80" target="_blank"
+                >View source on GitHub</a
               >
             </p>
           </div>
@@ -169,26 +186,41 @@
               <a href="https://pastry-chef.netlify.app/login" target="_blank"
                 >View project on Netlify</a
               >
+              ·
+              <a
+                href="https://github.com/Pozner2024/Students-Skill-Tracker"
+                target="_blank"
+                >View source on GitHub</a
+              >
             </p>
           </div>
 
           <!-- Third Project -->
           <div class="project">
-            <h3>Konditer App</h3>
+            <h3>Konditer-pro.app</h3>
             <p>
-              A professional web application for confectioners and culinary
-              students — the next stage of my work in confectionery education.
-              The platform brings together learning materials, interactive
-              practice, and reference content to support both students mastering
-              the profession and practicing confectioners in their daily work.
+              This project is the next version of the 'Students' Skill Tracker'
+              – a full-stack web platform for confectioners and culinary
+              students, which combines learning materials, interactive testing,
+              and reference content with an admin area where teachers publish
+              topics through a rich-text editor, manage users, and upload
+              images. Authentication, role-based access, and image processing
+              are handled on the server, and the whole stack is shipped with
+              Docker.
             </p>
             <p>
               <strong>Technologies used:</strong> HTML5, CSS, JavaScript,
-              Firebase
+              Nest.js, PostgreSQL, Docker, Webpack
             </p>
             <p>
               <a href="https://www.konditer-app.pro" target="_blank"
                 >View live project</a
+              >
+              ·
+              <a
+                href="https://github.com/Pozner2024/Students-Skill-Tracker-2"
+                target="_blank"
+                >View source on GitHub</a
               >
             </p>
           </div>
@@ -203,12 +235,11 @@
               orders. The project helped me practice working with both frontend
               and backend in a single codebase.
             </p>
+            <p><strong>Technologies used:</strong> JavaScript, Node.js, SCSS</p>
             <p>
-              <strong>Technologies used:</strong> JavaScript, Node.js,
-              Handlebars, SCSS, CSS
-            </p>
-            <p>
-              <a href="https://github.com/Pozner2024/JewelryShop" target="_blank"
+              <a
+                href="https://github.com/Pozner2024/JewelryShop"
+                target="_blank"
                 >View source on GitHub</a
               >
             </p>
@@ -225,7 +256,7 @@
             </p>
             <p>
               <strong>Technologies used:</strong> React, JavaScript, Webpack,
-              Babel
+              Redux
             </p>
             <p>
               <a
@@ -238,17 +269,24 @@
 
           <!-- Sixth Project -->
           <div class="project">
-            <h3>Nat's Doll</h3>
+            <h3>NatsDoll</h3>
             <p>
               A personal showcase website dedicated to handcrafted dolls. The
               site presents the collection in a clean, gallery-style layout and
               serves as an online portfolio for the project, combining a
               friendly visual design with a focus on the craft itself.
             </p>
-            <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript</p>
+            <p>
+              <strong>Technologies used:</strong> HTML5, SCSS, Vue.js, Hono.js,
+              PostgreSQL
+            </p>
             <p>
               <a href="https://natsdoll.com/" target="_blank"
                 >View live project</a
+              >
+              ·
+              <a href="https://github.com/Pozner2024/NatsDoll" target="_blank"
+                >View source on GitHub</a
               >
             </p>
           </div>
@@ -277,7 +315,7 @@
     </div>
 
     <footer>
-      <p>&copy; 2024 Natallia Pazniak.</p>
+      <p>&copy; 2026 Natallia Pazniak.</p>
     </footer>
   </body>
 </html>
