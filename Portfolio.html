@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
         margin: 0;
       }
       nav {
-        background: #333;
+        background: #3d3a52;
         color: #fff;
         padding: 10px;
         text-align: center;
@@ -68,18 +68,23 @@
         margin-top: 10px;
         color: #7774a7;
         text-decoration: none;
-      }
-      .project a:hover,
-      .contact a:hover {
-        transform: scale(1.1);
-        text-decoration: underline;
+        transform-origin: left center;
+        transition: transform 0.2s ease, text-decoration 0.2s ease;
       }
       .contact a {
         color: #7774a7;
         text-decoration: none;
+        display: inline-block;
+        transform-origin: left center;
+        transition: transform 0.2s ease, text-decoration 0.2s ease;
+      }
+      .project a:hover,
+      .contact a:hover {
+        transform: scale(1.05);
+        text-decoration: underline;
       }
       footer {
-        background: #333;
+        background: #3d3a52;
         color: #fff;
         text-align: center;
         padding: 10px 0;
@@ -121,11 +126,17 @@
             "
           />
           <p>
-            I am currently working as a teacher of mathematics and information
-            technology at a college. In early 2024, I began studying frontend
-            development and plan to grow in this direction by learning React. My
-            experience includes technologies such as HTML, CSS, JavaScript, and
-            Firebase.
+            "I am a teacher of mathematics and information technology at a
+            college, and since early 2024, I have been actively developing as a
+            web developer. I started my journey with HTML, CSS, and JavaScript,
+            and then began exploring full-stack development. Initially, I worked
+            with React, but after exploring Vue, I found it more
+            well-thought-out and more to my liking, so I switched to it. My
+            current project is being developed using Vue 3, along with
+            TypeScript, Pinia, and SCSS on the frontend. On the backend, I work
+            with Hono, Prisma, and PostgreSQL. Additionally, I handle
+            authentication (JWT, Google OAuth), S3 storage, automated testing
+            (Vitest, Playwright, Cypress), and deployment with Docker."
           </p>
         </div>
       </section>
@@ -138,15 +149,19 @@
           <div class="project">
             <h3>Victory's 80th Anniversary</h3>
             <p>
-              This is my first project, and I am still working on its content.
-              The project is designed as an educational resource for teachers
-              and college students on the topic of World War II. It also serves
-              as a kind of portfolio for a history teacher.
+              This is my very first project. The project is designed as an
+              educational resource for teachers and college students on the
+              topic of World War II. It also serves as a kind of portfolio for a
+              history teacher.
             </p>
             <p><strong>Technologies used:</strong> HTML5, CSS, JavaScript</p>
             <p>
               <a href="https://great-victory.netlify.app/" target="_blank"
                 >View project on Netlify</a
+              >
+              &nbsp;|&nbsp;
+              <a href="https://github.com/Pozner2024/Victory80" target="_blank"
+                >View source on GitHub</a
               >
             </p>
           </div>
@@ -168,6 +183,112 @@
             <p>
               <a href="https://pastry-chef.netlify.app/login" target="_blank"
                 >View project on Netlify</a
+              >
+              &nbsp;|&nbsp;
+              <a
+                href="https://github.com/Pozner2024/Students-Skill-Tracker"
+                target="_blank"
+                >View source on GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Third Project -->
+          <div class="project">
+            <h3>Konditer App</h3>
+            <p>
+              "This project is the next version of the 'Students' Skill Tracker'
+              – a full-stack web platform for confectioners and culinary
+              students, which combines learning materials, interactive testing,
+              and reference content with an admin area where teachers publish
+              topics through a rich-text editor, manage users, and upload
+              images. Authentication, role-based access, and image processing
+              are handled on the server, and the whole stack is shipped with
+              Docker."
+            </p>
+            <p>
+              <strong>Technologies used:</strong> JavaScript, Webpack,
+              Bootstrap, CKEditor, Prisma, PostgreSQL, S3, Cypress, Docker
+            </p>
+            <p>
+              <a href="https://www.konditer-app.pro" target="_blank"
+                >View live project</a
+              >
+              &nbsp;|&nbsp;
+              <a
+                href="https://github.com/Pozner2024/Students-Skill-Tracker-2"
+                target="_blank"
+                >View source on GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Fourth Project -->
+          <div class="project">
+            <h3>Jewelry Shop</h3>
+            <p>
+              A full-stack e-commerce project for an online jewelry store. The
+              application is split into a client part with the storefront and a
+              server part that handles product management, user accounts, and
+              orders. The project helped me practice working with both frontend
+              and backend in a single codebase.
+            </p>
+            <p>
+              <strong>Technologies used:</strong> JavaScript, Node.js,
+              Express.js, SCSS
+            </p>
+            <p>
+              <a
+                href="https://github.com/Pozner2024/JewelryShop"
+                target="_blank"
+                >View source on GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Fifth Project -->
+          <div class="project">
+            <h3>React Shop</h3>
+            <p>
+              An online shop application built with React as part of my journey
+              into modern frontend development. The project demonstrates working
+              with reusable components, custom hooks, and centralized state
+              management, while product data is loaded from a JSON catalog.
+            </p>
+            <p><strong>Technologies used:</strong> React, Webpack</p>
+            <p>
+              <a
+                href="https://github.com/Pozner2024/React-Pazniak/tree/main/shop"
+                target="_blank"
+                >View source on GitHub</a
+              >
+            </p>
+          </div>
+
+          <!-- Sixth Project -->
+          <div class="project">
+            <h3>Nat's Doll</h3>
+            <p>
+              A full-stack B2C online store for handcrafted polymer-clay dolls.
+              The project covers the complete shopping flow — gallery, product
+              pages, registration and login (including Google OAuth), cart, and
+              PayPal checkout — backed by a typed API, a PostgreSQL database,
+              and image storage in S3. The frontend follows Feature-Sliced
+              Design, the codebase is fully typed end-to-end, and the
+              application is deployed to a VPS with Docker Compose.
+            </p>
+            <p>
+              <strong>Technologies used:</strong> Vue 3, Pinia, TypeScript,
+              Vite, SCSS, Hono, Node.js, Prisma, PostgreSQL, JWT, Google OAuth,
+              PayPal, Yandex Object Storage (S3), Vitest, Playwright, Docker
+            </p>
+            <p>
+              <a href="https://natsdoll.com/" target="_blank"
+                >View live project</a
+              >
+              &nbsp;|&nbsp;
+              <a href="https://github.com/Pozner2024/NatsDoll" target="_blank"
+                >View source on GitHub</a
               >
             </p>
           </div>
@@ -196,7 +317,7 @@
     </div>
 
     <footer>
-      <p>&copy; 2024 Natallia Pazniak.</p>
+      <p>&copy; 2026 Natallia Pazniak.</p>
     </footer>
   </body>
 </html>
